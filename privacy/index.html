@@ -44,7 +44,7 @@
     <ul>
       <li>Text in pictures and documents is read on your phone by Google ML Kit text recognition and barcode scanning.</li>
       <li>Understanding and summarising is done on your phone by Gemini Nano, running in Android's AICore service. If Gemini Nano is not available, the app uses its own rules on the phone instead.</li>
-      <li>Speech is turned into text by your phone's on-device speech recognition.</li>
+      <li>When you tap the microphone, your speech is turned into text by your phone's on-device speech recognition and is never sent online. The words appear in the text box for you to edit, like typed text, and no recording is kept. If your phone only offers online speech recognition, the in-app microphone isn't shown.</li>
       <li>Nothing is done until you approve it. Messages and e-mails are always drafts that open in your own apps for you to send.</li>
     </ul>
   </section>
@@ -59,7 +59,7 @@
     <h2>When the app goes online</h2>
     <ul>
       <li><strong>Reading a web page.</strong> Only when you share a link and tap "Read page", the app downloads that page the way a browser would. Nothing of yours is sent with the request.</li>
-      <li><strong>Google components.</strong> Google ML Kit and AICore may download or update their on-phone models, and ML Kit sends Google diagnostics and usage data. That data covers device details (make, model, Android version), app details (package name and version), installation identifiers, performance metrics and error codes. It does not include the content you share. See <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">Google's ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Google components.</strong> Google ML Kit and AICore may download or update their on-phone models, and Android may download its UK English speech recognition model the first time you use the microphone (a model download, which never includes your speech). ML Kit also sends Google diagnostics and usage data. That data covers device details (make, model, Android version), app details (package name and version), installation identifiers, performance metrics and error codes. It does not include the content you share. See <a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noopener">Google's ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</li>
     </ul>
     <p>We do not use advertising, analytics or tracking services of our own, and we do not sell or share your data.</p>
   </section>
@@ -69,7 +69,7 @@
     <p>The app never sends anything to us by itself. Two features prepare an e-mail in your own e-mail app, which you can read, edit or discard before sending:</p>
     <ul>
       <li><strong>Send feedback</strong> (Settings › About) adds your app version, phone model, Android version and whether Gemini Nano is on. If you leave "Include these counts" on, it also adds two numbers kept only on your phone: how many things you've shared and how many actions you've tapped.</li>
-      <li><strong>Send this example to the developer</strong> (under a result) adds what you shared with Screen2Act for that result (the text, or the text read from a picture or document) and what the app suggested. The app shows you exactly what will be included first, so you can remove anything private.</li>
+      <li><strong>Send this example to the developer</strong> (under a result) adds what you shared with Screen2Act for that result (the text, or for a screenshot, PDF or document, the text read from it; the file itself is not attached), the summary and actions the app suggested, and your app version, phone model, Android version and whether Gemini Nano or the app's built-in reading was used. What you shared may include other people's details, such as a sender's name or phone number, so check the e-mail and remove anything you don't want to send. We use those details only to fix the problem.</li>
     </ul>
     <p>If you send one, we receive it as an ordinary e-mail at hello@screen2act.com. We use it only to answer you and to fix and improve Screen2Act, and we delete it when it is no longer needed for that. Ask us at any time to delete an e-mail you sent.</p>
   </section>
